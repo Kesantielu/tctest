@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ПДД Тест</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div class="title" id="appTitle">ПДД Тест</div>
+        <div class="stats">
+            <div>
+                <span id="correctLabel">Правильно:</span>
+                <span id="correctCount">0</span>
+            </div>
+            <div>
+                <span id="totalLabel">Всего:</span>
+                <span id="totalCount">0</span>
+            </div>
+            <div>
+                <span id="accuracyLabel">Точность:</span>
+                <span id="accuracy">0%</span>
+            </div>
+        </div>
+        <div class="lang-switch">
+            <button class="lang-btn active" data-lang="ru">RU</button>
+            <button class="lang-btn" data-lang="kz">KZ</button>
+            <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+    </div>
+
+    <div class="content">
+        <div id="loading" class="loading">
+            <div id="loadingText">Загрузка вопросов...</div>
+        </div>
+
+        <div id="error" class="error" style="display: none;">
+            <div id="errorText">Ошибка загрузки данных</div>
+            <div id="errorDetails" class="error-details" style="display: none;"></div>
+            <button class="retry-btn" onclick="init()">Попробовать снова</button>
+        </div>
+
+        <div id="questionContainer" style="display: none;">
+            <div class="question-id" id="questionId">Вопрос №1</div>
+            <div class="question-text" id="questionText"></div>
+
+            <div class="video-container">
+                <video id="questionVideo" controls>
+                    <source id="videoSource" src="" type="video/mp4">
+                    <div id="videoError">Ваш браузер не поддерживает видео.</div>
+                </video>
+            </div>
+
+            <div class="answers" id="answersContainer"></div>
+
+            <div class="buttons">
+                <button class="btn btn-primary" id="submitBtn" onclick="submitAnswer()">
+                    <span id="submitText">Ответить</span>
+                </button>
+                <button class="btn btn-success" id="nextBtn" onclick="nextQuestion()" style="display: none;">
+                    <span id="nextText">Следующий вопрос</span>
+                </button>
+            </div>
+
+            <div id="explanationContainer" style="display: none;">
+                <div class="explanation">
+                    <h4 id="explanationTitle">Объяснение:</h4>
+                    <p id="explanationText"></p>
+                </div>
+
+                <div class="detailed-explanation" id="detailedExplanation" style="display: none;">
+                    <h5 onclick="toggleDetailedExplanation()" id="detailedTitle">Подробное объяснение инструктора</h5>
+                    <div class="detailed-video">
+                        <video controls style="width: 100%; border-radius: 8px;">
+                            <source id="detailedVideoSource" src="" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

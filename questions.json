@@ -1,0 +1,54 @@
+[{
+  "answers": [
+    {
+      "id": 1,
+      "is_correct": false,
+      "title": {
+        "en": "Allowed.",
+        "kz": "Рұқсат.",
+        "ru": "Разрешен."
+      }
+    },
+    {
+      "id": 2,
+      "is_correct": true,
+      "title": {
+        "en": "Banned.",
+        "kz": "Тыйым салынған.",
+        "ru": "Запрещен."
+      }
+    },
+    {
+      "id": 3,
+      "is_correct": false,
+      "title": {
+        "en": "This case is not considered in the Traffic Codes.",
+        "kz": "Осы жағдай Ережеде қарастырылмаған.",
+        "ru": "Данная ситуация не рассмотрена в ПДД."
+      }
+    }
+  ],
+  "explanation": {
+    "en": "In this scenario, overtaking by means of the lane designated for reverse movement is strictly forbidden. Access to that lane is permitted only when the reverse traffic light shows a green arrow pointing downward. (Section 5, Paragraph 29 of the Traffic Regulations of the Republic of Kazakhstan.)",
+    "kz": "Бұл жағдайда реверсивтік қозғалыс жолын пайдаланып алға шығуға тыйым салынады. Осы жолға шығу тек реверсивтік бағдаршамның төмен бағытталған жасыл көрсеткіші шығаруымен мүмкін болады. (ҚР Жол қозғалысы ережелері, 5-бөлім, 29-тармақ.)",
+    "ru": "При данных условиях обгон с использованием полосы для реверсивного движения категорически запрещен. Въезд на эту полосу разрешается только при наличии сигнала реверсивного светофора в виде зелёной стрелки, направленной вниз. (Раздел 5, пункт 29 Правил дорожного движения Республики Казахстан.)"
+  },
+  "explanation2_file": {
+    "id": "videos/248_explanation2.mp4",
+  },
+  "explanation2_kz_file": {
+    "id": "videos/248_explanation2_kz.mp4",
+  },
+  "explanation_file": {
+    "id": "videos/248_explanation.mp4"
+  },
+  "id": 248,
+  "question": {
+    "en": "Is it permissible to execute an overtaking maneuver in this scenario?",
+    "kz": "Осы жағдайда көлікті басып озуға рұқсат бар ма?",
+    "ru": "Можно ли выполнить обгон в данной ситуации?"
+  },
+  "question_file": {
+    "id": "videos/248_question.mp4"
+  }
+}]
